@@ -1,0 +1,2540 @@
+fileFormatVersion: 2
+guid: bcb55182a51a73749b48bfc8b26e2c7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6584058326024946275
+    second: turner_0
+  - first:
+      213: 7339288093051854742
+    second: turner_1
+  - first:
+      213: 7403179853310430156
+    second: turner_2
+  - first:
+      213: 1813210814130255937
+    second: turner_3
+  - first:
+      213: 4140623938194818976
+    second: turner_4
+  - first:
+      213: -4379041993181961585
+    second: turner_5
+  - first:
+      213: -3616121992301465433
+    second: turner_6
+  - first:
+      213: 3781901227546239026
+    second: turner_7
+  - first:
+      213: -8383441689030647733
+    second: turner_8
+  - first:
+      213: -3468424256097909735
+    second: turner_9
+  - first:
+      213: -7971078125476499439
+    second: turner_10
+  - first:
+      213: -7765996095467504636
+    second: turner_11
+  - first:
+      213: 7134946453239645882
+    second: turner_12
+  - first:
+      213: 7618498359568353012
+    second: turner_13
+  - first:
+      213: -5006855422535287479
+    second: turner_14
+  - first:
+      213: -2738074161035864330
+    second: turner_15
+  - first:
+      213: 4009171146701492547
+    second: turner_16
+  - first:
+      213: 8375829647043561172
+    second: turner_17
+  - first:
+      213: -6963840663378264345
+    second: turner_18
+  - first:
+      213: -632052277044873769
+    second: turner_19
+  - first:
+      213: 2297959423786866830
+    second: turner_20
+  - first:
+      213: 4086383136284254322
+    second: turner_21
+  - first:
+      213: -3200774969718542740
+    second: turner_22
+  - first:
+      213: -4908992511922981829
+    second: turner_23
+  - first:
+      213: -8789473689891591096
+    second: turner_24
+  - first:
+      213: 914740414974463606
+    second: turner_25
+  - first:
+      213: -1051075588352605343
+    second: turner_26
+  - first:
+      213: 2025671606414725315
+    second: turner_27
+  - first:
+      213: -4198671987459094693
+    second: turner_28
+  - first:
+      213: -8033911071677725023
+    second: turner_29
+  - first:
+      213: -3923929634476369826
+    second: turner_30
+  - first:
+      213: -384962139473485594
+    second: turner_31
+  - first:
+      213: 6821824035187984299
+    second: turner_32
+  - first:
+      213: 5037747272874338002
+    second: turner_33
+  - first:
+      213: 1936584352672262748
+    second: turner_34
+  - first:
+      213: -2074179563756077490
+    second: turner_35
+  - first:
+      213: 426904809650960744
+    second: turner_36
+  - first:
+      213: -591352650471798582
+    second: turner_37
+  - first:
+      213: 7191646548184807677
+    second: turner_38
+  - first:
+      213: -8610064841867101748
+    second: turner_39
+  - first:
+      213: 4608733685247536068
+    second: turner_40
+  - first:
+      213: 7295784236006704873
+    second: turner_41
+  - first:
+      213: 4276463914109398189
+    second: turner_42
+  - first:
+      213: -1547759205333617775
+    second: turner_43
+  - first:
+      213: -1476448161667874672
+    second: turner_44
+  - first:
+      213: -5963813059510607287
+    second: turner_45
+  - first:
+      213: -3552864470880763276
+    second: turner_46
+  - first:
+      213: 3803492666656056002
+    second: turner_47
+  - first:
+      213: 5281494800310309866
+    second: turner_48
+  - first:
+      213: 8607818091499555595
+    second: turner_49
+  - first:
+      213: 7646862655172102748
+    second: turner_50
+  - first:
+      213: -9019279796426295581
+    second: turner_51
+  - first:
+      213: 2454441586119079384
+    second: turner_52
+  - first:
+      213: 1377563280378896321
+    second: turner_53
+  - first:
+      213: -7800575833057766456
+    second: turner_54
+  - first:
+      213: 2044713640294183340
+    second: turner_55
+  - first:
+      213: -2764616456160575024
+    second: turner_56
+  - first:
+      213: 1632160288989201853
+    second: turner_57
+  - first:
+      213: 2727221845820495433
+    second: turner_58
+  - first:
+      213: -4553938817599663230
+    second: turner_59
+  - first:
+      213: -7272524845452603475
+    second: turner_60
+  - first:
+      213: -7765858031210346103
+    second: turner_61
+  - first:
+      213: 7771831809854098686
+    second: turner_62
+  - first:
+      213: 1461252769090603203
+    second: turner_63
+  - first:
+      213: 4043211778673193242
+    second: turner_64
+  - first:
+      213: 3519830669169550147
+    second: turner_65
+  - first:
+      213: 676553469040429038
+    second: turner_66
+  - first:
+      213: -3298436941939393465
+    second: turner_67
+  - first:
+      213: -9216104756265582429
+    second: turner_68
+  - first:
+      213: -4257556998587806948
+    second: turner_69
+  - first:
+      213: -2483199947449154071
+    second: turner_70
+  - first:
+      213: 4877306304858326696
+    second: turner_71
+  - first:
+      213: 6242230246326829185
+    second: turner_72
+  - first:
+      213: -5988309785203265296
+    second: turner_73
+  - first:
+      213: -7477410210936322837
+    second: turner_74
+  - first:
+      213: -879194247657792202
+    second: turner_75
+  - first:
+      213: 8070017223085193256
+    second: turner_76
+  - first:
+      213: 699165398916057396
+    second: turner_77
+  - first:
+      213: -7886709024566679244
+    second: turner_78
+  - first:
+      213: 6007387100883328111
+    second: turner_79
+  - first:
+      213: -1907235584634860222
+    second: turner_80
+  - first:
+      213: 767227242179953245
+    second: turner_81
+  - first:
+      213: 7557144755260350135
+    second: turner_82
+  - first:
+      213: -4551449347093208060
+    second: turner_83
+  - first:
+      213: -5516435878812041423
+    second: turner_84
+  - first:
+      213: -2561932637618029405
+    second: turner_85
+  - first:
+      213: 3590379264598902948
+    second: turner_86
+  - first:
+      213: 6359041696377909759
+    second: turner_87
+  - first:
+      213: -5302216895490701084
+    second: turner_88
+  - first:
+      213: -5704281913226363110
+    second: turner_89
+  - first:
+      213: 4103019598663378756
+    second: turner_90
+  - first:
+      213: 8208600270912821782
+    second: turner_91
+  - first:
+      213: -6232348383406137874
+    second: turner_92
+  - first:
+      213: 6683805593081144455
+    second: turner_93
+  - first:
+      213: 3452007090593511031
+    second: turner_94
+  - first:
+      213: 4242363736059052680
+    second: turner_95
+  - first:
+      213: 8040404659575508509
+    second: turner_96
+  - first:
+      213: 5860595702189985773
+    second: turner_97
+  - first:
+      213: 8498180805327461250
+    second: turner_98
+  - first:
+      213: -6808285725044514061
+    second: turner_99
+  - first:
+      213: 7341117060347624833
+    second: turner_100
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: turner_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 184
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3628b27e9264f5b50800000000000000
+      internalID: 6584058326024946275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 184
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f1c9aa2a36ad560800000000000000
+      internalID: 7339288093051854742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 184
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb85e45ad06db660800000000000000
+      internalID: 7403179853310430156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 178
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148712fe0a1d92910800000000000000
+      internalID: 1813210814130255937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 178
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c498a883767930800000000000000
+      internalID: 4140623938194818976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 191
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82eed322848a33c0800000000000000
+      internalID: -4379041993181961585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_6
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 191
+        width: 15
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0b4600534f0ddc0800000000000000
+      internalID: -3616121992301465433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_7
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 226
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230e18b01230c7430800000000000000
+      internalID: 3781901227546239026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_8
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 226
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a022833808ab80800000000000000
+      internalID: -8383441689030647733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_9
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 243
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9148fecf38eaddfc0800000000000000
+      internalID: -3468424256097909735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_10
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 196
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110361e6daa016190800000000000000
+      internalID: -7971078125476499439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 190
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cb69a72b3a93490800000000000000
+      internalID: -7765996095467504636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_12
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 173
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab648c42ffb640360800000000000000
+      internalID: 7134946453239645882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_13
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 173
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6c7fbb4e75ab960800000000000000
+      internalID: 7618498359568353012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_14
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 171
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dbb0a4583148ab0800000000000000
+      internalID: -5006855422535287479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_15
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 161
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f618c6be08600ad0800000000000000
+      internalID: -2738074161035864330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_16
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 158
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34153ea9aef63a730800000000000000
+      internalID: 4009171146701492547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 128
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6873bdfacec3470800000000000000
+      internalID: 8375829647043561172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_18
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 184
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eefaea00d77b5f90800000000000000
+      internalID: -6963840663378264345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 183
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d573438dcf7a37f0800000000000000
+      internalID: -632052277044873769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 136
+        width: 218
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88d31bbbedf3ef10800000000000000
+      internalID: 2297959423786866830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_21
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 135
+        width: 81
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270ae56dfcfb5b830800000000000000
+      internalID: 4086383136284254322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_22
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 132
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ee6fb9f109493d0800000000000000
+      internalID: -3200774969718542740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_23
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 131
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3437c1c151cfdbb0800000000000000
+      internalID: -4908992511922981829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_24
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 131
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cae576f34850680800000000000000
+      internalID: -8789473689891591096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_25
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 125
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e0f389f8fc1bc00800000000000000
+      internalID: 914740414974463606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_26
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 161
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163882c3254d961f0800000000000000
+      internalID: -1051075588352605343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_27
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 123
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0d1f3f791ac1c10800000000000000
+      internalID: 2025671606414725315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_28
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 111
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b570e1ba2125bb5c0800000000000000
+      internalID: -4198671987459094693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_29
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 128
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6429f1270d18090800000000000000
+      internalID: -8033911071677725023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_30
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 127
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58586d89c66b89c0800000000000000
+      internalID: -3923929634476369826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 114
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e065b849f658aaf0800000000000000
+      internalID: -384962139473485594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_32
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 128
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70a9101dcfbae50800000000000000
+      internalID: 6821824035187984299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_33
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 128
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d62edb147ca9e540800000000000000
+      internalID: 5037747272874338002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_34
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 128
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a2c92553120ea10800000000000000
+      internalID: 1936584352672262748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eb1fd1da80733e0800000000000000
+      internalID: -2074179563756077490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_36
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 115
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869b62c99abace500800000000000000
+      internalID: 426904809650960744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_37
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 113
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac884a3c5e71bc7f0800000000000000
+      internalID: -591352650471798582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_38
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 111
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df838bebe6cddc360800000000000000
+      internalID: 7191646548184807677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_39
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 110
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc97e67f4a7e28880800000000000000
+      internalID: -8610064841867101748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_40
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 110
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb6e8d5ed285ff30800000000000000
+      internalID: 4608733685247536068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 110
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e60311ab15df3560800000000000000
+      internalID: 7295784236006704873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_42
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 109
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac644fa54d095b30800000000000000
+      internalID: 4276463914109398189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 109
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193bf300431458ae0800000000000000
+      internalID: -1547759205333617775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_44
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 109
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0900282383a928be0800000000000000
+      internalID: -1476448161667874672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_45
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 103
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e809be974c3da0800000000000000
+      internalID: -5963813059510607287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_46
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 101
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472cb0e6690b1bec0800000000000000
+      internalID: -3552864470880763276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_47
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 118
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c266d5bd68b8c430800000000000000
+      internalID: 3803492666656056002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_48
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 116
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3919fc983ab4940800000000000000
+      internalID: 5281494800310309866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_49
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 118
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b0303b2fc157770800000000000000
+      internalID: 8607818091499555595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_50
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 115
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5acbbfe11d1f1a60800000000000000
+      internalID: 7646862655172102748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_51
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 115
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e63724bfc415d280800000000000000
+      internalID: -9019279796426295581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_52
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 115
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5f29e4e9def0220800000000000000
+      internalID: 2454441586119079384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_53
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 108
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf1b9e31861e1310800000000000000
+      internalID: 1377563280378896321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_54
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 102
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3581beb99ceb390800000000000000
+      internalID: -7800575833057766456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_55
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 104
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca17125f838406c10800000000000000
+      internalID: 2044713640294183340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 110
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1895e0bfb12a9d0800000000000000
+      internalID: -2764616456160575024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_57
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 95
+        width: 45
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db543b1a22996a610800000000000000
+      internalID: 1632160288989201853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_58
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 60
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946d0dfb1d909d520800000000000000
+      internalID: 2727221845820495433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_59
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 59
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2831c10f5c82dc0c0800000000000000
+      internalID: -4553938817599663230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_60
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 111
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf489e3f2dc21b90800000000000000
+      internalID: -7272524845452603475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_61
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 6
+        width: 79
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989c79114412a3490800000000000000
+      internalID: -7765858031210346103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_62
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 94
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc4f68aad71bdb60800000000000000
+      internalID: 7771831809854098686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_63
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 95
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c883b4c6a9674410800000000000000
+      internalID: 1461252769090603203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_64
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 94
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11bd7bd0bf5c1830800000000000000
+      internalID: 4043211778673193242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_65
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 94
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34360614853f8d030800000000000000
+      internalID: 3519830669169550147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_66
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 82
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee786b9abc9936900800000000000000
+      internalID: 676553469040429038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_67
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 80
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c3da1c3199932d0800000000000000
+      internalID: -3298436941939393465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_68
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 67
+        width: 80
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0800e9d81d91080800000000000000
+      internalID: -9216104756265582429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_69
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 97
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b0230a77e1ae4c0800000000000000
+      internalID: -4257556998587806948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_70
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 102
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5460aedc6e98dd0800000000000000
+      internalID: -2483199947449154071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_71
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 102
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a68ad14e3cafa340800000000000000
+      internalID: 4877306304858326696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_72
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 95
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1808286165bd0a650800000000000000
+      internalID: 6242230246326829185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_73
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 95
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0b6ff4aff35eca0800000000000000
+      internalID: -5988309785203265296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_74
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 60
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40349b707ea3890800000000000000
+      internalID: -7477410210936322837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_75
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 57
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d5acb6d797cc3f0800000000000000
+      internalID: -879194247657792202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_76
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 97
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828f64958e57eff60800000000000000
+      internalID: 8070017223085193256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_77
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 60
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439c2a9d93fe3b900800000000000000
+      internalID: 699165398916057396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_78
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 61
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439e5df7de7cc8290800000000000000
+      internalID: -7886709024566679244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_79
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 60
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c1a606db68e5350800000000000000
+      internalID: 6007387100883328111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_80
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 5
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dcada37532885e0800000000000000
+      internalID: -1907235584634860222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_81
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d528320ac1db5aa00800000000000000
+      internalID: 767227242179953245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_82
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bedf7d8d1f50e860800000000000000
+      internalID: 7557144755260350135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_83
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 72
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4046355fee006d0c0800000000000000
+      internalID: -4551449347093208060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_84
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 70
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f3039abcea173b0800000000000000
+      internalID: -5516435878812041423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_85
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 76
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac3c4cf6df227cd0800000000000000
+      internalID: -2561932637618029405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_86
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 75
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a888532be693d130800000000000000
+      internalID: 3590379264598902948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_87
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 69
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1b0803bbadf3850800000000000000
+      internalID: 6359041696377909759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_88
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 69
+        width: 57
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c33e63ddba66b0800000000000000
+      internalID: -5302216895490701084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_89
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 62
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ff47f82d156d0b0800000000000000
+      internalID: -5704281913226363110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_90
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 8
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447ebc4169ad0f830800000000000000
+      internalID: 4103019598663378756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_91
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a1fe2947ecae170800000000000000
+      internalID: 8208600270912821782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_92
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 44
+        width: 56
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedd89a6a204289a0800000000000000
+      internalID: -6232348383406137874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_93
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 15
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784ee5b46c5a1cc50800000000000000
+      internalID: 6683805593081144455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_94
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 2
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b4fcc82ef7ef20800000000000000
+      internalID: 3452007090593511031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_95
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 2
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8828cc74757efda30800000000000000
+      internalID: 4242363736059052680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_96
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec4602071459f60800000000000000
+      internalID: 8040404659575508509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_97
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 2
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def07398db4055150800000000000000
+      internalID: 5860595702189985773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_98
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b169aca6a9fe570800000000000000
+      internalID: 8498180805327461250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_99
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2eb55743c1481a0800000000000000
+      internalID: -6808285725044514061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turner_100
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d749c4213e0e560800000000000000
+      internalID: 7341117060347624833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

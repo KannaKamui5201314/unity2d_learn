@@ -1,0 +1,275 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class GameController : MonoBehaviour
+{
+    // Start is called before the first frame update
+
+    public Scrollbar BloodScrollbar;
+
+    public Text BloodValueText;
+    public Scrollbar BloodScrollbarEnemy;
+    public Text BloodValueTextEnemy;
+    public Text RoundCount;
+    public Text RoundText;
+    public Text CountDownText;
+
+    public GameObject EveryEventPrefab;
+    public GameObject AllEvent;
+    public GameObject AllEnemyEvent;
+
+    public Sprite NullEventIcon;
+    public Sprite[] EventIcons_1;
+    public Sprite[] EventIcons_2;
+    public Sprite[] EventIcons_3;
+    public Sprite[] EventIcons_4;
+    public Sprite[] EventIcons_5;
+    public Sprite[] EventIcons_6;
+    public Sprite[] EventIcons_7;
+    
+
+    private int DiceValue = 0;
+
+    private float countDownTime = 0;
+
+    private bool startCountDownTime = false;
+
+    private bool LoadDataCompleted = false;
+
+    private GameObject QuitGameCanvas;
+    private GameObject TransitionCanvas;
+    private GameObject BeginDialog;
+
+    void OnDisable() 
+    {
+        
+        if(Global.Debug) Debug.Log("OnDisable");
+    }
+
+    void OnDestroy()
+    {
+        if (Global.Debug) Debug.Log("OnDestroy");
+    }
+
+    void Start()
+    {
+        //修改帧率
+        //Application.targetFrameRate = 30;
+        //Ctrl + K + C全选注释
+        //Ctrl + K + U 全选去掉注释
+        
+
+        QuitGameCanvas = GameObject.Find("QuitGameCanvas");
+        TransitionCanvas = GameObject.Find("TransitionCanvas");
+        BeginDialog = GameObject.Find("BeginDialog");
+        QuitGameCanvas.GetComponent<Canvas>().enabled = false;
+        TransitionCanvas.GetComponent<Canvas>().enabled = true;
+        BeginDialog.GetComponent<Canvas>().enabled = false;
+
+        InitData();
+
+        LoadDataCompleted = LoadData();
+
+        DiceValue = GameObject.FindGameObjectWithTag("Dice").GetComponent<Dice>().DiceValue;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (LoadDataCompleted)
+        {
+            TransitionCanvas.GetComponent<Canvas>().enabled = false;
+            BeginDialog.GetComponent<Canvas>().enabled = true;
+            LoadDataCompleted = false;
+        }
+
+        if (BeginDialog.GetComponent<Canvas>().enabled)
+        {
+            countDownTime += Time.deltaTime;
+            if (countDownTime > 2.0f)
+            {
+                BeginDialog.GetComponent<Canvas>().enabled = false;
+                countDownTime = 0;
+                
+                Global.RoundCount = Global.RoundCount + 1;
+                RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
+                startCountDownTime = true;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            showQuitGameDialog();
+        }
+        if (startCountDownTime)
+        {
+            countDownTime += Time.deltaTime;
+            CountDownText.text = (30 - Mathf.Floor(countDownTime)).ToString();
+            if (countDownTime > 30.0f)
+            {
+                countDownTime = 0;
+                startCountDownTime = false;
+            }
+        }
+    }
+
+    public void createEveryEvent(int count) 
+    {
+        for (int i = 0; i < count; i++)
+        {
+            //Debug.Log(AllEventlist.Count);
+            int race;
+            if (Random.Range(1, 11) > 7)
+            {
+                race = Random.Range(1, 8);
+            }
+            else
+            {
+                race = 0;
+            }
+            if (Global.AllEventlist.Count == 0) 
+            {
+                //Debug.Log("AllEventlist.Count = " + AllEventlist.Count);
+                race = 0;
+            }
+            EveryEvent newEveryEvent = new EveryEvent(Global.AllEventlist.Count, Global.Players[0], race, Random.Range(0, 7));
+            Global.AllEventlist.Add(newEveryEvent);
+            Vector3 tempEveryEventPosition = new Vector3(Global.lastEveryEventPosition.x + Global.everyEventOffset, -1, 0);
+            Vector3 newEveryEventPosition = new Vector3(Global.lastEveryEventPosition.x + Global.everyEventOffset + AllEvent.transform.position.x, -1, 0);
+            Global.lastEveryEventPosition = tempEveryEventPosition;
+            GameObject newEveryEventPrefab = Instantiate(EveryEventPrefab, newEveryEventPosition, Quaternion.identity);
+            //Debug.Log(newEveryEventPrefab.transform.position.x);
+            newEveryEventPrefab.transform.parent = AllEvent.transform;
+            //Debug.Log(newEveryEventPrefab.transform.position.x);
+            setSprite(newEveryEventPrefab, newEveryEvent);
+        }
+    }
+
+    public void createEnemyEveryEvent(int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            //Debug.Log(AllEventlist.Count);
+            int race;
+            if (Random.Range(1, 11) > 7)
+            {
+                race = Random.Range(1, 8);
+            }
+            else
+            {
+                race = 0;
+            }
+            if (Global.AllEnemyEventlist.Count == 0)
+            {
+                //Debug.Log("AllEnemyEventlist.Count = " + AllEnemyEventlist.Count);
+                race = 0;
+            }
+            EveryEvent newEveryEvent = new EveryEvent(Global.AllEnemyEventlist.Count, Global.Players[1], race, Random.Range(0, 7));
+            Global.AllEnemyEventlist.Add(newEveryEvent);
+            Vector3 tempEveryEnemyEventPosition = new Vector3(Global.lastEveryEnemyEventPosition.x + Global.everyEventOffset, 1, 0);
+            Vector3 newEveryEventPosition = new Vector3(Global.lastEveryEnemyEventPosition.x + Global.everyEventOffset + AllEnemyEvent.transform.position.x, 1, 0);
+            Global.lastEveryEnemyEventPosition = tempEveryEnemyEventPosition;
+            GameObject newEveryEventPrefab = Instantiate(EveryEventPrefab, newEveryEventPosition, Quaternion.identity);
+            //Debug.Log(newEveryEventPrefab.transform.position.x);
+            newEveryEventPrefab.transform.parent = AllEnemyEvent.transform;
+            //Debug.Log(newEveryEventPrefab.transform.position.x);
+            setSprite(newEveryEventPrefab, newEveryEvent);
+        }
+    }
+
+    void setSprite(GameObject m_GameObject, EveryEvent newEveryEvent)
+    {
+        Sprite sprite = null;
+        //Debug.Log("newEveryEvent.race=" + newEveryEvent.race + "; newEveryEvent.skill=" + newEveryEvent.skill) ;
+        switch (newEveryEvent.race) {
+            case 0:
+                sprite = NullEventIcon;
+                break;
+            case 1:
+                sprite = EventIcons_1[newEveryEvent.skill];
+                break;
+            case 2:
+                sprite = EventIcons_2[newEveryEvent.skill];
+                break;
+            case 3:
+                sprite = EventIcons_3[newEveryEvent.skill];
+                break;
+            case 4:
+                sprite = EventIcons_4[newEveryEvent.skill];
+                break;
+            case 5:
+                sprite = EventIcons_5[newEveryEvent.skill];
+                break;
+            case 6:
+                sprite = EventIcons_6[newEveryEvent.skill];
+                break;
+            case 7:
+                sprite = EventIcons_7[newEveryEvent.skill];
+                break;
+
+        }
+        m_GameObject.GetComponent<SpriteRenderer>().sprite = sprite;
+        if (newEveryEvent.race == 0) {
+            //设置颜色
+            m_GameObject.GetComponent<SpriteRenderer>().color = new Color32(112, 200, 181, 255);
+        }
+    }
+
+    void setBlood(int value)
+    {
+        Global.currentBloodValue = value;
+        BloodScrollbar.size = value * 0.01f;
+        BloodValueText.text = value.ToString();
+    }
+
+    void setBloodEnemy(int value)
+    {
+        BloodScrollbarEnemy.size = value * 0.01f;
+        BloodValueTextEnemy.text = value.ToString();
+    }
+
+    void InitData()
+    {
+        Global.RoundCount = 0;
+        Global.currentBloodValue = Global.DefaultBloodValue;
+        Global.target = 0;
+        Global.AllEventlist.Clear();
+        Global.AllEnemyEventlist.Clear();
+        Global.lastEveryEventPosition = new Vector3(-1.28f, -1, 0);
+        Global.lastEveryEnemyEventPosition = new Vector3(-1.28f, 1, 0);
+        Global.allEventVirtualPosition = new Vector3(0, 0, 0);
+        Global.allEnemyEventVirtualPosition = new Vector3(0, 0, 0);
+    }
+
+    bool LoadData()
+    {
+        
+        AllEvent.transform.position = Global.allEventVirtualPosition;
+        AllEnemyEvent.transform.position = Global.allEnemyEventVirtualPosition;
+        setBlood(Global.DefaultBloodValue);
+        setBloodEnemy(Global.DefaultBloodValue);
+        createEveryEvent(20);
+        createEnemyEveryEvent(20);
+        RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
+        return true;
+    }
+
+    void showQuitGameDialog()
+    {
+        QuitGameCanvas.GetComponent<Canvas>().enabled = true;
+    }
+
+
+    void gameOver()
+    {
+        if (Global.currentBloodValue == 0)
+        {
+            if (Global.Debug) Debug.Log("Game Over,you lose");
+        }
+
+    }
+}
