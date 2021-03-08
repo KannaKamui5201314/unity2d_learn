@@ -31,9 +31,13 @@ public class GameController : MonoBehaviour
     public Sprite[] EventIcons_7;
     
 
-    private int DiceValue = 0;
+    private Dice Dice;
 
-    private float countDownTime = 0;
+    public float countDownTime = 0;
+
+    private static float EveryRoundTime = 15;
+
+    private bool BeginDialogCompleted = false;
 
     private bool startCountDownTime = false;
 
@@ -42,6 +46,8 @@ public class GameController : MonoBehaviour
     private GameObject QuitGameCanvas;
     private GameObject TransitionCanvas;
     private GameObject BeginDialog;
+
+    private AudioSource BackgroundAudio;
 
     void OnDisable() 
     {
@@ -73,31 +79,46 @@ public class GameController : MonoBehaviour
 
         LoadDataCompleted = LoadData();
 
-        DiceValue = GameObject.FindGameObjectWithTag("Dice").GetComponent<Dice>().DiceValue;
+        Dice = GameObject.Find("Dice").GetComponent<Dice>();
+        BackgroundAudio = GameObject.Find("background").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Global.CurrentRoundCompleted)
+        {
+            Global.CurrentRoundCompleted = false;
+            Global.NextRound = true;
 
-        if (LoadDataCompleted)
+            Global.RoundCount = Global.RoundCount + 1;
+            RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
+        }
+
+        //游戏开始入口
+        if (LoadDataCompleted)//①
         {
             TransitionCanvas.GetComponent<Canvas>().enabled = false;
             BeginDialog.GetComponent<Canvas>().enabled = true;
             LoadDataCompleted = false;
         }
 
-        if (BeginDialog.GetComponent<Canvas>().enabled)
+        if (BeginDialog.GetComponent<Canvas>().enabled)//②
         {
             countDownTime += Time.deltaTime;
             if (countDownTime > 2.0f)
             {
                 BeginDialog.GetComponent<Canvas>().enabled = false;
+                BeginDialogCompleted = true;
                 countDownTime = 0;
                 
                 Global.RoundCount = Global.RoundCount + 1;
                 RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
-                startCountDownTime = true;
+                Global.NextRound = true;
+                if (!Global.Debug)
+                {
+                    BackgroundAudio.Play();
+                }
             }
         }
 
@@ -105,14 +126,31 @@ public class GameController : MonoBehaviour
         {
             showQuitGameDialog();
         }
-        if (startCountDownTime)
+        Debug.Log("Global.NextRound = " + Global.NextRound);
+        if (Global.NextRound && BeginDialogCompleted) //③
         {
-            countDownTime += Time.deltaTime;
-            CountDownText.text = (30 - Mathf.Floor(countDownTime)).ToString();
-            if (countDownTime > 30.0f)
+            Global.NextRound = false;
+            startCountDownTime = true;
+            countDownTime = 0;
+            //if (Global.Clicked)
             {
+                Dice.Dothings(2);
+            }
+        }
+        if (startCountDownTime)//④
+        {
+            if (!Global.StartSlide)
+            {
+                countDownTime += Time.deltaTime;
+                CountDownText.text = (EveryRoundTime - Mathf.Floor(countDownTime)).ToString();
+            }
+                
+            if (countDownTime > EveryRoundTime)
+            {
+                Dice.Dothings(1,0);
                 countDownTime = 0;
                 startCountDownTime = false;
+
             }
         }
     }

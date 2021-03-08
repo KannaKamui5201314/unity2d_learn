@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    Button btn;
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Button>().onClick.AddListener(OnClick);
+        btn = GameObject.Find("StartGame").GetComponent<Button>();
+        btn.onClick.AddListener(OnClick);
     }
 
     // Update is called once per frame

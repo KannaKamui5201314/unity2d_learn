@@ -13,7 +13,7 @@ public class background : MonoBehaviour
 
     void Start()
     {
-        
+        this.GetComponent<AudioSource>().Stop();
     }
 
     // Update is called once per frame
