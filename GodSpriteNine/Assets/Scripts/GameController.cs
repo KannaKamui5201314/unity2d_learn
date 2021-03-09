@@ -93,6 +93,11 @@ public class GameController : MonoBehaviour
 
             Global.RoundCount = Global.RoundCount + 1;
             RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
+
+            Debug.Log("EveryEventGameObjectsList.count = " + Global.EveryEventGameObjectsList.Count);
+            Debug.Log("EnemyEveryEventGameObjectsList.count = " + Global.EnemyEveryEventGameObjectsList.Count);
+            Global.EveryEventGameObjectsList.Clear();
+            Global.EnemyEveryEventGameObjectsList.Clear();
         }
 
         //游戏开始入口
@@ -129,6 +134,8 @@ public class GameController : MonoBehaviour
         Debug.Log("Global.NextRound = " + Global.NextRound);
         if (Global.NextRound && BeginDialogCompleted) //③
         {
+            Global.EveryEventGameObjectsList.Clear();
+            Global.EnemyEveryEventGameObjectsList.Clear();
             Global.NextRound = false;
             startCountDownTime = true;
             countDownTime = 0;

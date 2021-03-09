@@ -29,6 +29,9 @@ public class Global
     public static bool NextRound = false;
     public static bool CurrentRoundCompleted = false;
 
+    public static List<Collider2D> EveryEventGameObjectsList = new List<Collider2D>();
+    public static List<Collider2D> EnemyEveryEventGameObjectsList = new List<Collider2D>();
+
     public static int[] Players = { 0, 1 };
     public static int[] Races = { 1, 2, 3, 4, 5, 6, 7 };
     public static int[] Skills = { 1, 2, 3, 4, 5, 6, 7 };

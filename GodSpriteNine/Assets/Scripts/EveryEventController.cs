@@ -15,7 +15,7 @@ public class EveryEventController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -24,7 +24,17 @@ public class EveryEventController : MonoBehaviour
         {
             GameObject.Destroy(this.gameObject);
         }
-        
+        if (other.gameObject.tag == "Player")
+        {
+            Global.EveryEventGameObjectsList.Add(other);
+        }
+        if (other.gameObject.tag == "EnemyPlayer")
+        {
+            Global.EnemyEveryEventGameObjectsList.Add(other);
+        }
+
+
+
         //Debug.Log(other.name);
     }
 }
