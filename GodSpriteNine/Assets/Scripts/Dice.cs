@@ -155,6 +155,7 @@ public class Dice : MonoBehaviour
         }
         else if (value == 1)
         {
+            m_Anim.SetFloat("DiceValue", 0);//初始化动画参数，不然会点击出现抖动
             Global.StartSlide = true;
             Global.Clicked = true;
             DiceValue = Random.Range(1, 7);
