@@ -39,14 +39,14 @@ public class Dice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("m_Anim.GetFloat  DiceValue = " + m_Anim.GetFloat("DiceValue"));
+        //Debug.Log("m_Anim.GetFloat  DiceValue = " + m_Anim.GetFloat("DiceValue"));
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dice"))
         {
             //float a = m_Anim.GetFloat("DiceValue");
-            Debug.Log("DothingsValue=" + DothingsValue);
+            //Debug.Log("DothingsValue=" + DothingsValue);
 
-            Debug.Log("Global.Clicked=" + Global.Clicked);
-            Debug.Log("Global.Clicked_Enemy=" + Global.Clicked_Enemy);
+            //Debug.Log("Global.Clicked=" + Global.Clicked);
+            //Debug.Log("Global.Clicked_Enemy=" + Global.Clicked_Enemy);
             if (DothingsValue == 3)
             {
                 DothingsValue = 0;
@@ -97,9 +97,9 @@ public class Dice : MonoBehaviour
                 EnemyActionCompleted = true;
             }
         }
-        Debug.Log("iActionCompleted = " + iActionCompleted);
-        Debug.Log("EnemyActionCompleted = " + EnemyActionCompleted);
-        Debug.Log("Global.CurrentRoundCompleted = " + Global.CurrentRoundCompleted);
+        //Debug.Log("iActionCompleted = " + iActionCompleted);
+        //Debug.Log("EnemyActionCompleted = " + EnemyActionCompleted);
+        //Debug.Log("Global.CurrentRoundCompleted = " + Global.CurrentRoundCompleted);
         if (iActionCompleted && EnemyActionCompleted)
         {
             iActionCompleted = false;
