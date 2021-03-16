@@ -48,6 +48,7 @@ public class GameController : MonoBehaviour
     private GameObject QuitGameCanvas;
     private GameObject TransitionCanvas;
     private GameObject BeginDialog;
+    private GameObject GameOverCanvas;
 
     private AudioSource BackgroundAudio;
 
@@ -73,9 +74,11 @@ public class GameController : MonoBehaviour
         QuitGameCanvas = GameObject.Find("QuitGameCanvas");
         TransitionCanvas = GameObject.Find("TransitionCanvas");
         BeginDialog = GameObject.Find("BeginDialog");
+        GameOverCanvas = GameObject.Find("GameOverCanvas");
         QuitGameCanvas.GetComponent<Canvas>().enabled = false;
         TransitionCanvas.GetComponent<Canvas>().enabled = true;
         BeginDialog.GetComponent<Canvas>().enabled = false;
+        GameOverCanvas.GetComponent<Canvas>().enabled = false;
 
         InitData();
 
@@ -88,6 +91,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gameOver();
         if (Global.CurrentRoundCompleted)
         {
             Global.CurrentRoundCompleted = false;
@@ -332,14 +336,9 @@ public class GameController : MonoBehaviour
 
     void gameOver()
     {
-        if (Global.currentBloodValue <= 0)
+        if (Global.currentBloodValue <= 0 || Global.currentEnemyBloodValue <= 0)
         {
-            //if (Global.Debug) Debug.Log("Game Over,you lose");
-        }
-        if (Global.currentEnemyBloodValue <= 0)
-        {
-            //if (Global.Debug) Debug.Log("Game Over,you win");
-        }
-
+            GameOverCanvas.GetComponent<Canvas>().enabled = true;
+        } 
     }
 }
