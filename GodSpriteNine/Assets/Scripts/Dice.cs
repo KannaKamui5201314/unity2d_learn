@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.IO;
+
 public class Dice : MonoBehaviour
 {
     protected Animator m_Anim;
@@ -18,22 +20,25 @@ public class Dice : MonoBehaviour
     private Vector3 tempTargetAllEnemyEventPosition;
 
     private GameController GameController;
+    private ExecSkills ExecSkills;
 
     private bool iActionCompleted = false;
     private bool EnemyActionCompleted = false;
-
+    private bool ExecSkillsCompleted = false;
     
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         GameController = GameObject.Find("GameController").GetComponent<GameController>();
+        ExecSkills = GameObject.Find("GameController").GetComponent<ExecSkills>();
         m_Anim = this.GetComponent<Animator>();
         AllEvent = GameObject.Find("AllEvent");
         AllEnemyEvent = GameObject.Find("AllEnemyEvent");
         m_Anim.SetFloat("DiceValue", DiceValue);
-
+        
     }
 
     // Update is called once per frame
@@ -100,22 +105,28 @@ public class Dice : MonoBehaviour
         //Debug.Log("iActionCompleted = " + iActionCompleted);
         //Debug.Log("EnemyActionCompleted = " + EnemyActionCompleted);
         //Debug.Log("Global.CurrentRoundCompleted = " + Global.CurrentRoundCompleted);
+        //Debug.Log("ExecSkillsCompleted = " + ExecSkillsCompleted);
+        //Debug.Log("Global.StartSlide = " + Global.StartSlide);
         if (iActionCompleted && EnemyActionCompleted)
         {
             iActionCompleted = false;
             EnemyActionCompleted = false;
-            Global.StartSlide = false;
-            Global.CurrentRoundCompleted = true;
+            
+            ExecSkillsCompleted = ExecSkills.ExecSkill();
+            
         }
 
-        if (Global.StartSlide)
+        if (ExecSkillsCompleted)
         {
-            
+            ExecSkillsCompleted = false;
+            Global.StartSlide = false;
+            Global.CurrentRoundCompleted = true;
         }
     }
 
     void OnMouseDown()
     {
+        //GameController.getSpriteName();
         if (!Global.StartSlide)
         {
             GameController.countDownTime = 0;
@@ -125,6 +136,8 @@ public class Dice : MonoBehaviour
         }
         
     }
+
+
 
     //value(1为玩家；2为敌方;3为自动行进一格)
     public void Dothings(int value)

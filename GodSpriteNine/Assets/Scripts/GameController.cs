@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
@@ -52,12 +54,12 @@ public class GameController : MonoBehaviour
     void OnDisable() 
     {
         
-        if(Global.Debug) Debug.Log("OnDisable");
+        //if(Global.Debug) Debug.Log("OnDisable");
     }
 
     void OnDestroy()
     {
-        if (Global.Debug) Debug.Log("OnDestroy");
+        //if (Global.Debug) Debug.Log("OnDestroy");
     }
 
     void Start()
@@ -94,8 +96,8 @@ public class GameController : MonoBehaviour
             Global.RoundCount = Global.RoundCount + 1;
             RoundCount.GetComponent<Text>().text = Global.RoundCount.ToString();
 
-            Debug.Log("EveryEventGameObjectsList.count = " + Global.EveryEventGameObjectsList.Count);
-            Debug.Log("EnemyEveryEventGameObjectsList.count = " + Global.EnemyEveryEventGameObjectsList.Count);
+            //Debug.Log("EveryEventGameObjectsList.count = " + Global.EveryEventGameObjectsList.Count);
+            //Debug.Log("EnemyEveryEventGameObjectsList.count = " + Global.EnemyEveryEventGameObjectsList.Count);
             Global.EveryEventGameObjectsList.Clear();
             Global.EnemyEveryEventGameObjectsList.Clear();
         }
@@ -131,7 +133,7 @@ public class GameController : MonoBehaviour
         {
             showQuitGameDialog();
         }
-        Debug.Log("Global.NextRound = " + Global.NextRound);
+        //Debug.Log("Global.NextRound = " + Global.NextRound);
         if (Global.NextRound && BeginDialogCompleted) //③
         {
             Global.EveryEventGameObjectsList.Clear();
@@ -181,7 +183,7 @@ public class GameController : MonoBehaviour
                 //Debug.Log("AllEventlist.Count = " + AllEventlist.Count);
                 race = 0;
             }
-            EveryEvent newEveryEvent = new EveryEvent(Global.AllEventlist.Count, Global.Players[0], race, Random.Range(0, 7));
+            EveryEvent newEveryEvent = new EveryEvent(race.ToString(), Random.Range(0, 7).ToString());
             Global.AllEventlist.Add(newEveryEvent);
             Vector3 tempEveryEventPosition = new Vector3(Global.lastEveryEventPosition.x + Global.everyEventOffset, -1, 0);
             Vector3 newEveryEventPosition = new Vector3(Global.lastEveryEventPosition.x + Global.everyEventOffset + AllEvent.transform.position.x, -1, 0);
@@ -191,6 +193,7 @@ public class GameController : MonoBehaviour
             newEveryEventPrefab.transform.parent = AllEvent.transform;
             //Debug.Log(newEveryEventPrefab.transform.position.x);
             setSprite(newEveryEventPrefab, newEveryEvent);
+            setEveryEvent(newEveryEventPrefab, newEveryEvent);
         }
     }
 
@@ -213,7 +216,7 @@ public class GameController : MonoBehaviour
                 //Debug.Log("AllEnemyEventlist.Count = " + AllEnemyEventlist.Count);
                 race = 0;
             }
-            EveryEvent newEveryEvent = new EveryEvent(Global.AllEnemyEventlist.Count, Global.Players[1], race, Random.Range(0, 7));
+            EveryEvent newEveryEvent = new EveryEvent(race.ToString(), Random.Range(0, 7).ToString());
             Global.AllEnemyEventlist.Add(newEveryEvent);
             Vector3 tempEveryEnemyEventPosition = new Vector3(Global.lastEveryEnemyEventPosition.x + Global.everyEventOffset, 1, 0);
             Vector3 newEveryEventPosition = new Vector3(Global.lastEveryEnemyEventPosition.x + Global.everyEventOffset + AllEnemyEvent.transform.position.x, 1, 0);
@@ -223,7 +226,19 @@ public class GameController : MonoBehaviour
             newEveryEventPrefab.transform.parent = AllEnemyEvent.transform;
             //Debug.Log(newEveryEventPrefab.transform.position.x);
             setSprite(newEveryEventPrefab, newEveryEvent);
+            setEveryEvent(newEveryEventPrefab, newEveryEvent);
         }
+    }
+
+    public void getSpriteName()
+    {
+        Sprite sprite = null;
+        for (int i = 0; i < 7; i++) 
+        {
+            sprite = EventIcons_7[i];
+            Debug.Log("sprite" + i + " =" + sprite.name);
+        }
+        
     }
 
     void setSprite(GameObject m_GameObject, EveryEvent newEveryEvent)
@@ -231,48 +246,54 @@ public class GameController : MonoBehaviour
         Sprite sprite = null;
         //Debug.Log("newEveryEvent.race=" + newEveryEvent.race + "; newEveryEvent.skill=" + newEveryEvent.skill) ;
         switch (newEveryEvent.race) {
-            case 0:
+            case "0":
                 sprite = NullEventIcon;
                 break;
-            case 1:
-                sprite = EventIcons_1[newEveryEvent.skill];
+            case "1":
+                sprite = EventIcons_1[int.Parse(newEveryEvent.skill)];
                 break;
-            case 2:
-                sprite = EventIcons_2[newEveryEvent.skill];
+            case "2":
+                sprite = EventIcons_2[int.Parse(newEveryEvent.skill)];
                 break;
-            case 3:
-                sprite = EventIcons_3[newEveryEvent.skill];
+            case "3":
+                sprite = EventIcons_3[int.Parse(newEveryEvent.skill)];
                 break;
-            case 4:
-                sprite = EventIcons_4[newEveryEvent.skill];
+            case "4":
+                sprite = EventIcons_4[int.Parse(newEveryEvent.skill)];
                 break;
-            case 5:
-                sprite = EventIcons_5[newEveryEvent.skill];
+            case "5":
+                sprite = EventIcons_5[int.Parse(newEveryEvent.skill)];
                 break;
-            case 6:
-                sprite = EventIcons_6[newEveryEvent.skill];
+            case "6":
+                sprite = EventIcons_6[int.Parse(newEveryEvent.skill)];
                 break;
-            case 7:
-                sprite = EventIcons_7[newEveryEvent.skill];
+            case "7":
+                sprite = EventIcons_7[int.Parse(newEveryEvent.skill)];
                 break;
 
         }
         m_GameObject.GetComponent<SpriteRenderer>().sprite = sprite;
-        if (newEveryEvent.race == 0) {
+        if (newEveryEvent.race.Equals("0")) {
             //设置颜色
             m_GameObject.GetComponent<SpriteRenderer>().color = new Color32(112, 200, 181, 255);
         }
     }
 
-    void setBlood(int value)
+    void setEveryEvent(GameObject m_GameObject, EveryEvent newEveryEvent)
+    {
+        m_GameObject.GetComponent<EveryEventController>().setEveryEvent(newEveryEvent);
+    }
+
+    public void setBlood(int value)
     {
         Global.currentBloodValue = value;
         BloodScrollbar.size = value * 0.01f;
         BloodValueText.text = value.ToString();
     }
 
-    void setBloodEnemy(int value)
+    public void setBloodEnemy(int value)
     {
+        Global.currentEnemyBloodValue = value;
         BloodScrollbarEnemy.size = value * 0.01f;
         BloodValueTextEnemy.text = value.ToString();
     }
@@ -281,6 +302,7 @@ public class GameController : MonoBehaviour
     {
         Global.RoundCount = 0;
         Global.currentBloodValue = Global.DefaultBloodValue;
+        Global.currentEnemyBloodValue = Global.DefaultBloodValue;
         Global.target = 0;
         Global.AllEventlist.Clear();
         Global.AllEnemyEventlist.Clear();
@@ -292,7 +314,6 @@ public class GameController : MonoBehaviour
 
     bool LoadData()
     {
-        
         AllEvent.transform.position = Global.allEventVirtualPosition;
         AllEnemyEvent.transform.position = Global.allEnemyEventVirtualPosition;
         setBlood(Global.DefaultBloodValue);
@@ -311,9 +332,13 @@ public class GameController : MonoBehaviour
 
     void gameOver()
     {
-        if (Global.currentBloodValue == 0)
+        if (Global.currentBloodValue <= 0)
         {
-            if (Global.Debug) Debug.Log("Game Over,you lose");
+            //if (Global.Debug) Debug.Log("Game Over,you lose");
+        }
+        if (Global.currentEnemyBloodValue <= 0)
+        {
+            //if (Global.Debug) Debug.Log("Game Over,you win");
         }
 
     }

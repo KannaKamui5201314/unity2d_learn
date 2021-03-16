@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EveryEventController : MonoBehaviour
 {
-    
+    private EveryEvent everyEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class EveryEventController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -26,32 +27,45 @@ public class EveryEventController : MonoBehaviour
         }
         if (other.gameObject.tag == "Player")
         {
-            Global.EveryEventGameObjectsList.Add(other);
+            Global.EveryEventGameObjectsList.Add(this.GetComponent<Collider2D>());
         }
         if (other.gameObject.tag == "EnemyPlayer")
         {
-            Global.EnemyEveryEventGameObjectsList.Add(other);
+            Global.EnemyEveryEventGameObjectsList.Add(this.GetComponent<Collider2D>());
         }
 
-
-
         //Debug.Log(other.name);
+    }
+
+    public void setEveryEvent(EveryEvent tempEveryEvent)
+    {
+        everyEvent = tempEveryEvent;
+    }
+
+    public EveryEvent getEveryEvent()
+    {
+        return everyEvent;
     }
 }
 
 
-
+[System.Serializable]
 public class EveryEvent 
 {
-    public int id;
-    public int player;
-    public int race;
-    public int skill;
+    public string id;
+    public string skillname;
+    public string race;
+    public string skill;
+    public int injuryValue;
 
-    public EveryEvent(int id, int player, int race, int skill) {
-        this.id = id;
-        this.player = player;
+    public EveryEvent(string race, string skill) {
         this.race = race;
         this.skill = skill;
     }
+
+}
+
+public class EveryEvents
+{
+    public EveryEvent[] everyEvents;
 }

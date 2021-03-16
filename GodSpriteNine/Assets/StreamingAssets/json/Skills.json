@@ -1,0 +1,359 @@
+﻿{
+  "everyEvents": [
+    {
+      "id": "1",
+      "skillname": "T_IceSpikes",
+      "race": "1",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "2",
+      "skillname": "T_SnowWhirlwind",
+      "race": "1",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "3",
+      "skillname": "T_FrozenLightning",
+      "race": "1",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "4",
+      "skillname": "T_IceSpectator",
+      "race": "1",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "5",
+      "skillname": "T_IceSkull",
+      "race": "1",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "6",
+      "skillname": "T_GoldenArrow",
+      "race": "1",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "7",
+      "skillname": "T_FrozenHeart",
+      "race": "1",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "8",
+      "skillname": "T_EnragedSpirit",
+      "race": "2",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "9",
+      "skillname": "T_SpiritualBlast",
+      "race": "2",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "10",
+      "skillname": "T_RaisedSpirit",
+      "race": "2",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "11",
+      "skillname": "T_SpiritualScale",
+      "race": "2",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "12",
+      "skillname": "T_SpiritualArmor",
+      "race": "2",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "13",
+      "skillname": "T_SpiritualSkull",
+      "race": "2",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "14",
+      "skillname": "T_GhostWater",
+      "race": "2",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "15",
+      "skillname": "T_ArcaneArrow",
+      "race": "3",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "16",
+      "skillname": "T_ArcaneBeam",
+      "race": "3",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "17",
+      "skillname": "T_ArcaneLightning_",
+      "race": "3",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "18",
+      "skillname": "T_ArcaneRitual",
+      "race": "3",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "19",
+      "skillname": "T_ArcaneSpeed",
+      "race": "3",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "20",
+      "skillname": "T_ArcaneDemon",
+      "race": "3",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "21",
+      "skillname": "T_ArcaneAid",
+      "race": "3",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "22",
+      "skillname": "T_NatureStrike",
+      "race": "4",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "23",
+      "skillname": "T_NatureArrows",
+      "race": "4",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "24",
+      "skillname": "T_HuntingNet",
+      "race": "4",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "25",
+      "skillname": "T_NaturesGuardian",
+      "race": "4",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "26",
+      "skillname": "T_NatureRitual",
+      "race": "4",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "27",
+      "skillname": "T_NaturesWrath",
+      "race": "4",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "28",
+      "skillname": "T_HealingSwirl",
+      "race": "4",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "29",
+      "skillname": "T_Fireball",
+      "race": "5",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "30",
+      "skillname": "T_FlameWave",
+      "race": "5",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "31",
+      "skillname": "T_FierySwipes",
+      "race": "5",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "32",
+      "skillname": "T_BurningAura",
+      "race": "5",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "33",
+      "skillname": "T_FireSponge",
+      "race": "5",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "34",
+      "skillname": "T_FireWorm",
+      "race": "5",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "35",
+      "skillname": "T_ShinyHand",
+      "race": "5",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "36",
+      "skillname": "T_Parry",
+      "race": "6",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "37",
+      "skillname": "T_BloodSpikes",
+      "race": "6",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "38",
+      "skillname": "T_BloodMaw",
+      "race": "6",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "39",
+      "skillname": "T_ForeshadowBlood",
+      "race": "6",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "40",
+      "skillname": "T_BloodEye",
+      "race": "6",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "41",
+      "skillname": "T_BloodDrop",
+      "race": "6",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "42",
+      "skillname": "T_BloodHaze",
+      "race": "6",
+      "skill": "6",
+      "injuryValue": 8
+    },
+
+
+    {
+      "id": "43",
+      "skillname": "T_HolyFire_00",
+      "race": "7",
+      "skill": "0",
+      "injuryValue": -1
+    },
+    {
+      "id": "44",
+      "skillname": "T_RainbowZap",
+      "race": "7",
+      "skill": "1",
+      "injuryValue": -2
+    },
+    {
+      "id": "45",
+      "skillname": "T_HammerOfJustice",
+      "race": "7",
+      "skill": "2",
+      "injuryValue": -4
+    },
+    {
+      "id": "46",
+      "skillname": "T_SunOrb",
+      "race": "7",
+      "skill": "3",
+      "injuryValue": 0
+    },
+    {
+      "id": "47",
+      "skillname": "T_GoldenArmor",
+      "race": "7",
+      "skill": "4",
+      "injuryValue": 10
+    },
+    {
+      "id": "48",
+      "skillname": "T_Phoenix",
+      "race": "7",
+      "skill": "5",
+      "injuryValue": -50
+    },
+    {
+      "id": "49",
+      "skillname": "T_HealingGlobes",
+      "race": "7",
+      "skill": "6",
+      "injuryValue": 8
+    }
+  ]
+}

@@ -8,6 +8,7 @@ public class Global
     public static int RoundCount = 0;
     public static int DefaultBloodValue = 100;
     public static int currentBloodValue = 100;
+    public static int currentEnemyBloodValue = 100;
 
     public static Vector3 lastEveryEventPosition = new Vector3(-1.28f, -1, 0);
     public static Vector3 lastEveryEnemyEventPosition = new Vector3(-1.28f, 1, 0);
