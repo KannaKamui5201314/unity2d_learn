@@ -14,6 +14,8 @@ public class ExecSkills : MonoBehaviour
 
     public Text testText;
     private string strJson = "";
+
+    public GameObject BloodPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,11 +50,16 @@ public class ExecSkills : MonoBehaviour
                 Debug.Log("injuryValue = " + injuryValue);
                 switch (everyEvent.skill)
                 {
-                    case "4":break;
+                    case "4":
+                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
+                        break;
                     case "6":
+                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
                         GameController.setBlood((Global.currentBloodValue + injuryValue) >= 100 ? 100 : Global.currentBloodValue + injuryValue);
+
                         break;
                     default:
+                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
                         GameController.setBloodEnemy((Global.currentEnemyBloodValue + injuryValue) >= 100 ? 100 : Global.currentEnemyBloodValue + injuryValue);
                         break;
                 }
@@ -73,11 +80,15 @@ public class ExecSkills : MonoBehaviour
                 Debug.Log("injuryValue = " + injuryValue);
                 switch (everyEvent.skill)
                 {
-                    case "4": break;
+                    case "4":
+                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
+                        break;
                     case "6":
+                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
                         GameController.setBloodEnemy((Global.currentEnemyBloodValue + injuryValue)>=100? 100: Global.currentEnemyBloodValue + injuryValue);
                         break;
                     default:
+                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
                         GameController.setBlood((Global.currentBloodValue + injuryValue) >= 100 ? 100 : Global.currentBloodValue + injuryValue);
                         break;
                 }
@@ -111,10 +122,42 @@ public class ExecSkills : MonoBehaviour
         //Debug.Log(strJson);
         testText.text = Application.platform.ToString();
         return JsonUtility.FromJson<EveryEvents>(strJson);
-        
+    }
 
-        //EveryEvents everyEvents = JsonUtility.FromJson<EveryEvents>(str);
-        //Debug.Log(everyEvents.everyEvents);
-        //Debug.Log("injuryValue = " + everyEvents.everyEvents[0].injuryValue);
+    void showBloodPrefab(int player, string skill, int injuryValue)
+    {
+        GameObject newBloodPrefab = null;
+        newBloodPrefab = InstantiateBloodPrefab(player);
+        newBloodPrefab.GetComponentInChildren<Text>().text = injuryValue.ToString();
+        switch (skill)
+        {
+            case "3":
+                newBloodPrefab.GetComponentInChildren<Text>().color = new Color32(145, 21, 154, 255);//purple//困敌技能
+                break;
+            case "4":
+                newBloodPrefab.GetComponentInChildren<Text>().color = Color.white; //护盾
+                break;
+            case "6":
+                newBloodPrefab.GetComponentInChildren<Text>().color = Color.green;//治疗
+                break;
+            default:
+                newBloodPrefab.GetComponentInChildren<Text>().color = Color.red;//伤害
+                break;
+        }
+    }
+    GameObject InstantiateBloodPrefab(int player)
+    {
+        GameObject newBloodPrefab = null;
+        switch (player)
+        {
+            case 0:
+                newBloodPrefab = Instantiate(BloodPrefab, new Vector3(1.5f, -3.5f, 0), Quaternion.identity);
+                break;
+            case 1:
+                newBloodPrefab = Instantiate(BloodPrefab, new Vector3(1.5f,3,0), Quaternion.identity);
+                break;
+            default:break;
+        }
+        return newBloodPrefab;
     }
 }

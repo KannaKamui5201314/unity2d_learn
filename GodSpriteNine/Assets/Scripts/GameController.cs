@@ -52,6 +52,8 @@ public class GameController : MonoBehaviour
 
     private AudioSource BackgroundAudio;
 
+    private float GameOverDelayTime;
+
     void OnDisable() 
     {
         
@@ -338,7 +340,16 @@ public class GameController : MonoBehaviour
     {
         if (Global.currentBloodValue <= 0 || Global.currentEnemyBloodValue <= 0)
         {
-            GameOverCanvas.GetComponent<Canvas>().enabled = true;
+            
+            if (GameOverDelayTime <= 1.5f)
+            {
+                GameOverDelayTime += Time.deltaTime;
+            }
+            else
+            {
+                GameOverCanvas.GetComponent<Canvas>().enabled = true;
+            }
+            
         } 
     }
 }

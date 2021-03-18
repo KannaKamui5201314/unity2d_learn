@@ -4348,6 +4348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 1671341299}
+  BloodPrefab: {fileID: 1094801910078529488, guid: 1d50b69073d18e344abf67a4655a8222,
+    type: 3}
 --- !u!1 &1616131968
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,7 +4725,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671341297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
