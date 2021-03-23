@@ -12,14 +12,21 @@ public class ExecSkills : MonoBehaviour
     private GameController GameController;
     private EveryEvents everyEvents;
 
-    public Text testText;
     private string strJson = "";
 
     public GameObject BloodPrefab;
+
+    private ScrollRect scrollRect;
+    private GameObject myVerticalLayout;
+    public GameObject CombatInformationPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        scrollRect = GameObject.Find("CombatInformation").GetComponentInChildren<ScrollRect>();
+        myVerticalLayout = GameObject.Find("CombatInformation").GetComponentInChildren<VerticalLayoutGroup>().gameObject;
+        scrollRect.verticalNormalizedPosition = 0;
+
         GameController = GameObject.Find("GameController").GetComponent<GameController>();
         everyEvents = GetEveryEvents();
         Debug.Log("dataPath=" + Application.dataPath);
@@ -47,19 +54,22 @@ public class ExecSkills : MonoBehaviour
             if (!everyEvent.race.Equals("0"))
             {
                 int injuryValue = everyEvents.everyEvents[(int.Parse(everyEvent.race) - 1) * 7 + int.Parse(everyEvent.skill)].injuryValue;
+                string skillname = everyEvents.everyEvents[(int.Parse(everyEvent.race) - 1) * 7 + int.Parse(everyEvent.skill)].skillname;
                 Debug.Log("injuryValue = " + injuryValue);
+                Debug.Log("skillname = " + skillname);
+                showCombatInformationText(0, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                 switch (everyEvent.skill)
                 {
                     case "4":
-                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(0, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         break;
                     case "6":
-                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(0, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         GameController.setBlood((Global.currentBloodValue + injuryValue) >= 100 ? 100 : Global.currentBloodValue + injuryValue);
 
                         break;
                     default:
-                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(1, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         GameController.setBloodEnemy((Global.currentEnemyBloodValue + injuryValue) >= 100 ? 100 : Global.currentEnemyBloodValue + injuryValue);
                         break;
                 }
@@ -77,18 +87,23 @@ public class ExecSkills : MonoBehaviour
             if (!everyEvent.race.Equals("0"))
             {
                 int injuryValue = everyEvents.everyEvents[(int.Parse(everyEvent.race) - 1) * 7 + int.Parse(everyEvent.skill)].injuryValue;
+                string skillname = everyEvents.everyEvents[(int.Parse(everyEvent.race) - 1) * 7 + int.Parse(everyEvent.skill)].skillname;
                 Debug.Log("injuryValue = " + injuryValue);
+                Debug.Log("skillname = " + skillname);
+                showCombatInformationText(1, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
+                
+                
                 switch (everyEvent.skill)
                 {
                     case "4":
-                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(1, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         break;
                     case "6":
-                        showBloodPrefab(1, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(1, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         GameController.setBloodEnemy((Global.currentEnemyBloodValue + injuryValue)>=100? 100: Global.currentEnemyBloodValue + injuryValue);
                         break;
                     default:
-                        showBloodPrefab(0, everyEvent.skill, Mathf.Abs(injuryValue));
+                        showBloodPrefab(0, everyEvent.skill, skillname, Mathf.Abs(injuryValue));
                         GameController.setBlood((Global.currentBloodValue + injuryValue) >= 100 ? 100 : Global.currentBloodValue + injuryValue);
                         break;
                 }
@@ -120,14 +135,15 @@ public class ExecSkills : MonoBehaviour
         string filepath = "json/Skills.json";
         strJson = LoadFile(filepath);
         //Debug.Log(strJson);
-        testText.text = Application.platform.ToString();
         return JsonUtility.FromJson<EveryEvents>(strJson);
     }
 
-    void showBloodPrefab(int player, string skill, int injuryValue)
+    void showBloodPrefab(int player, string skill,string skillname, int injuryValue)
     {
         GameObject newBloodPrefab = null;
+        
         newBloodPrefab = InstantiateBloodPrefab(player);
+        
         newBloodPrefab.GetComponentInChildren<Text>().text = injuryValue.ToString();
         switch (skill)
         {
@@ -159,5 +175,54 @@ public class ExecSkills : MonoBehaviour
             default:break;
         }
         return newBloodPrefab;
+    }
+
+    void showCombatInformationText(int player, string skill, string skillname, int injuryValue)
+    {
+        GameObject newCombatInformationPrefab = null;
+        newCombatInformationPrefab = Instantiate(CombatInformationPrefab);
+        newCombatInformationPrefab.transform.SetParent(myVerticalLayout.transform);
+
+        string tempSkillname = "<color=red><b>" + skillname + "</b></color>";
+        string tempPlayer = "";
+        string tempRoundCount = "<color=red><b>" + "第"+ Global.RoundCount + "</b></color>";
+
+        if (player == 0)
+        {
+            tempPlayer = "<color=white>" + "你" + "</color>";
+        }
+        if (player == 1)
+        {
+            tempPlayer = "<color=black>" + "敌人" + "</color>";
+        }
+        switch (skill)
+        {
+            case "3":
+                if (player == 0)
+                {
+                    tempSkillname = "<color=purple><b>" + skillname + "</b></color>困住了敌人";
+                }
+                else
+                {
+                    tempSkillname = "<color=purple><b>" + skillname + "</b></color>困住了你";
+                }
+                break;
+            case "4":
+                tempSkillname = "<color=white><b>" + skillname + "</b></color>获得了"+ "<color=white><b>" + injuryValue + "</b></color>点护甲";
+                break;
+            case "6":
+                tempSkillname = "<color=green><b>" + skillname + "</b></color>回复了" + "<color=green><b>" + injuryValue + "</b></color>点血量";
+                break;
+            default:
+                tempSkillname = "<color=red><b>" + skillname + "</b></color>造成了" + "<color=red><b>" + injuryValue + "</b></color>点伤害";
+                break;
+        }
+
+        newCombatInformationPrefab.GetComponent<Text>().text = tempPlayer + "使用技能" + tempSkillname;
+
+        //解决UI重叠和显示不全问题
+        LayoutRebuilder.ForceRebuildLayoutImmediate(myVerticalLayout.GetComponent<RectTransform>());
+        LayoutRebuilder.ForceRebuildLayoutImmediate(scrollRect.GetComponent<RectTransform>());
+        scrollRect.verticalNormalizedPosition = 0;
     }
 }

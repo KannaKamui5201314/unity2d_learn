@@ -54,6 +54,8 @@ public class GameController : MonoBehaviour
 
     private float GameOverDelayTime;
 
+
+
     void OnDisable() 
     {
         
@@ -81,6 +83,8 @@ public class GameController : MonoBehaviour
         TransitionCanvas.GetComponent<Canvas>().enabled = true;
         BeginDialog.GetComponent<Canvas>().enabled = false;
         GameOverCanvas.GetComponent<Canvas>().enabled = false;
+
+        
 
         InitData();
 

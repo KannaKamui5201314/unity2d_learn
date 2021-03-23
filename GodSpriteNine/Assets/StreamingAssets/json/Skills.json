@@ -2,49 +2,49 @@
   "everyEvents": [
     {
       "id": "1",
-      "skillname": "T_IceSpikes",
+      "skillname": "冰刺",
       "race": "1",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "2",
-      "skillname": "T_SnowWhirlwind",
+      "skillname": "冰暴",
       "race": "1",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "3",
-      "skillname": "T_FrozenLightning",
+      "skillname": "冰裂",
       "race": "1",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "4",
-      "skillname": "T_IceSpectator",
+      "skillname": "冰封",
       "race": "1",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "5",
-      "skillname": "T_IceSkull",
+      "skillname": "冰皇",
       "race": "1",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "6",
-      "skillname": "T_GoldenArrow",
+      "skillname": "冰皇箭",
       "race": "1",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "7",
-      "skillname": "T_FrozenHeart",
+      "skillname": "冰心",
       "race": "1",
       "skill": "6",
       "injuryValue": 8
@@ -53,49 +53,49 @@
 
     {
       "id": "8",
-      "skillname": "T_EnragedSpirit",
+      "skillname": "初魂",
       "race": "2",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "9",
-      "skillname": "T_SpiritualBlast",
+      "skillname": "冥气",
       "race": "2",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "10",
-      "skillname": "T_RaisedSpirit",
+      "skillname": "冥将",
       "race": "2",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "11",
-      "skillname": "T_SpiritualScale",
+      "skillname": "梦魇",
       "race": "2",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "12",
-      "skillname": "T_SpiritualArmor",
+      "skillname": "冥盔",
       "race": "2",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "13",
-      "skillname": "T_SpiritualSkull",
+      "skillname": "冥王",
       "race": "2",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "14",
-      "skillname": "T_GhostWater",
+      "skillname": "冥液",
       "race": "2",
       "skill": "6",
       "injuryValue": 8
@@ -104,49 +104,49 @@
 
     {
       "id": "15",
-      "skillname": "T_ArcaneArrow",
+      "skillname": "彗击",
       "race": "3",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "16",
-      "skillname": "T_ArcaneBeam",
+      "skillname": "恒击",
       "race": "3",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "17",
-      "skillname": "T_ArcaneLightning_",
+      "skillname": "空裂",
       "race": "3",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "18",
-      "skillname": "T_ArcaneRitual",
+      "skillname": "黑洞",
       "race": "3",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "19",
-      "skillname": "T_ArcaneSpeed",
+      "skillname": "虚空行走",
       "race": "3",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "20",
-      "skillname": "T_ArcaneDemon",
+      "skillname": "虚空行者",
       "race": "3",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "21",
-      "skillname": "T_ArcaneAid",
+      "skillname": "重置",
       "race": "3",
       "skill": "6",
       "injuryValue": 8
@@ -155,49 +155,49 @@
 
     {
       "id": "22",
-      "skillname": "T_NatureStrike",
+      "skillname": "木击",
       "race": "4",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "23",
-      "skillname": "T_NatureArrows",
+      "skillname": "树箭",
       "race": "4",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "24",
-      "skillname": "T_HuntingNet",
+      "skillname": "林狗",
       "race": "4",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "25",
-      "skillname": "T_NaturesGuardian",
+      "skillname": "神网",
       "race": "4",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "26",
-      "skillname": "T_NatureRitual",
+      "skillname": "木遁",
       "race": "4",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "27",
-      "skillname": "T_NaturesWrath",
+      "skillname": "命王",
       "race": "4",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "28",
-      "skillname": "T_HealingSwirl",
+      "skillname": "生",
       "race": "4",
       "skill": "6",
       "injuryValue": 8
@@ -206,49 +206,49 @@
 
     {
       "id": "29",
-      "skillname": "T_Fireball",
+      "skillname": "火球术",
       "race": "5",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "30",
-      "skillname": "T_FlameWave",
+      "skillname": "火鸟",
       "race": "5",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "31",
-      "skillname": "T_FierySwipes",
+      "skillname": "火刃",
       "race": "5",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "32",
-      "skillname": "T_BurningAura",
+      "skillname": "燎原",
       "race": "5",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "33",
-      "skillname": "T_FireSponge",
+      "skillname": "火甲",
       "race": "5",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "34",
-      "skillname": "T_FireWorm",
+      "skillname": "火凤",
       "race": "5",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "35",
-      "skillname": "T_ShinyHand",
+      "skillname": "灼烧",
       "race": "5",
       "skill": "6",
       "injuryValue": 8
@@ -257,49 +257,49 @@
 
     {
       "id": "36",
-      "skillname": "T_Parry",
+      "skillname": "砍击",
       "race": "6",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "37",
-      "skillname": "T_BloodSpikes",
+      "skillname": "翎羽",
       "race": "6",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "38",
-      "skillname": "T_BloodMaw",
+      "skillname": "撕咬",
       "race": "6",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "39",
-      "skillname": "T_ForeshadowBlood",
+      "skillname": "兽群",
       "race": "6",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "40",
-      "skillname": "T_BloodEye",
+      "skillname": "兽丹",
       "race": "6",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "41",
-      "skillname": "T_BloodDrop",
+      "skillname": "撕裂",
       "race": "6",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "42",
-      "skillname": "T_BloodHaze",
+      "skillname": "吸血",
       "race": "6",
       "skill": "6",
       "injuryValue": 8
@@ -308,49 +308,49 @@
 
     {
       "id": "43",
-      "skillname": "T_HolyFire_00",
+      "skillname": "降临",
       "race": "7",
       "skill": "0",
       "injuryValue": -1
     },
     {
       "id": "44",
-      "skillname": "T_RainbowZap",
+      "skillname": "电闪",
       "race": "7",
       "skill": "1",
       "injuryValue": -2
     },
     {
       "id": "45",
-      "skillname": "T_HammerOfJustice",
+      "skillname": "雷击",
       "race": "7",
       "skill": "2",
       "injuryValue": -4
     },
     {
       "id": "46",
-      "skillname": "T_SunOrb",
+      "skillname": "光阵",
       "race": "7",
       "skill": "3",
       "injuryValue": 0
     },
     {
       "id": "47",
-      "skillname": "T_GoldenArmor",
+      "skillname": "神盔",
       "race": "7",
       "skill": "4",
       "injuryValue": 10
     },
     {
       "id": "48",
-      "skillname": "T_Phoenix",
+      "skillname": "金乌",
       "race": "7",
       "skill": "5",
       "injuryValue": -50
     },
     {
       "id": "49",
-      "skillname": "T_HealingGlobes",
+      "skillname": "神心",
       "race": "7",
       "skill": "6",
       "injuryValue": 8
